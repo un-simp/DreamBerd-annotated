@@ -22,8 +22,8 @@ When you've finished reading through all the features, check out the [examples](
 
 ## Exclamation Marks!
 
-Be bold! End every statement with an exclamation mark!
-
+Be bold! End every statement with an exclamation mark! 
+#### simple just verify that there is an ! at the end of each line
 ```java
 print("Hello world")!
 ```
@@ -35,13 +35,13 @@ print("Hello world")!!!
 ```
 
 If you're unsure, that's ok. You can put a question mark at the end of a line instead. It prints debug info about that line to the console for you.
-
+#### will need a check if ! or ?
 ```java
 print("Hello world")?
 ```
 
 You might be wondering what DreamBerd uses for the 'not' operator, which is an exclamation mark in most other languages. That's simple - the 'not' operator is a semi-colon instead.
-
+#### this is fucking hillarious and probably easy to implement
 ```java
 if (;false) {
    print("Hello world")!
@@ -51,13 +51,13 @@ if (;false) {
 ## Declarations
 
 There are four types of declaration. Constant constants can't be changed in any way.
-
+#### easy
 ```java
 const const name = "Luke"!
 ```
 
 Constant variables can be edited, but not re-assigned.
-
+#### not sure what edited means in this context but ill figure out
 ```java
 const var name = "Luke"!
 name.pop()!
@@ -72,7 +72,7 @@ name = "Lu"!
 ```
 
 Variable variables can be re-assigned and edited.
-
+#### the fuck
 ```java
 var var name = "Luke"!
 name = "Lu"!
@@ -84,7 +84,7 @@ name.push("e")!
 
 **New for 2023!**<br>
 Mutable data is an anti-pattern. Use the `const const const` keyword to make a constant constant constant. Its value will become constant and immutable, and will _never change_. Please be careful with this keyword, as it is very powerful, and will affect all users globally forever.
-
+#### ok so we want a server that stores const const const and the compiler acsesses to get keywords
 ```java
 const const const pi = 3.14!
 ```
@@ -92,7 +92,7 @@ const const const pi = 3.14!
 ## Naming
 
 Both variables and constants can be named with any Unicode character or string.
-
+#### why
 ```java
 const const firstAlphabetLetter = 'A'!
 var const 👍 = True!
@@ -100,7 +100,7 @@ var var 1️⃣ = 1!
 ```
 
 This includes numbers, and other language constructs.
-
+#### this is weird
 ```java
 const const 5 = 4!
 print(2 + 2 === 5)! //true
@@ -109,7 +109,7 @@ print(2 + 2 === 5)! //true
 ## Arrays
 
 Some languages start arrays at `0`, which can be unintuitive for beginners. Some languages start arrays at `1`, which isn't representative of how the code actually works. DreamBerd does the best of both worlds: Arrays start at `-1`.
-
+#### real
 ```java
 const const scores = [3, 2, 5]!
 print(scores[-1])! //3
@@ -119,7 +119,7 @@ print(scores[1])!  //5
 
 **New for 2022!**<br>
 You can now use floats for indexes too!
-
+#### :sob:
 ```java
 const var scores = [3, 2, 5]!
 scores[0.5] = 4!
@@ -129,7 +129,7 @@ print(scores)! //[3, 2, 4, 5]
 ## When
 
 In case you really need to vary a variable, the `when` keyword lets you check a variable each time it mutates.
-
+#### just a signal (subscriptions for later un when he goes back to c# mindset)
 ```java
 const var health = 10!
 when (health = 0) {
@@ -140,20 +140,20 @@ when (health = 0) {
 ## Lifetimes
 
 DreamBerd has a built-in garbage collector that will automatically clean up unused variables. However, if you want to be extra careful, you can specify a lifetime for a variable, with a variety of units.
-
+#### seems easy to implement just make sure redefining wont cause issues
 ```java
 const const name<2> = "Luke"! //lasts for two lines
 const const name<20s> = "Luke"! //lasts for 20 seconds
 ```
 
 By default, a variable will last until the end of the program. But you can make it last in between program-runs by specifying a longer lifetime.
-
+#### just save it to a file. or create another process which holds the data (unhinged method but also wont actually be forever)
 ```java
 const const name<Infinity> = "Luke"! //lasts forever
 ```
 
 Variable hoisting can be achieved with this neat trick. Specify a negative lifetime to make a variable exist before its creation, and disappear after its creation.
-
+#### would only work in a compiled method 
 ```java
 print(name)! //Luke
 const const name<-1> = "Luke"!
@@ -162,7 +162,7 @@ const const name<-1> = "Luke"!
 ## Loops
 
 Loops are a complicated relic of archaic programming languages. In DreamBerd, there are no loops.
-
+#### W Feature
 ## Installation
 
 To install DreamBerd to your command line, first install the DreamBerd installer.<br>
@@ -189,25 +189,26 @@ function isKeyDown(key) => {
 ```
 
 **Technical info:** Booleans are stored as one-and-a-half bits.
+#### pretty sure half bits dont exist so ig use 2 bits (t/f bit and maybe bit)
 
 ## Arithmetic
 
 DreamBerd has significant whitespace. Use spacing to specify the order of arithmetic operations.
-
+#### never dealt with whitespace but oh god
 ```java
 print(1 + 2*3)! //7
 print(1+2 * 3)! //9
 ```
 
 Unlike some other languages, DreamBerd allows you to use the caret (^) for exponentiation.
-
+### ok
 ```java
 print(1^1)! // 1
 print(2^3)! // 8
 ```
 
 You can also use the number name, for example:
-
+### actually probably wont be bad its just named one-ten thousand probably (not doing anymore) wont be acssessable
 ```java
 print(one+two)! //3
 ```
@@ -215,7 +216,7 @@ print(one+two)! //3
 ## Indents
 
 When it comes to indentation, DreamBerd strikes a happy medium that can be enjoyed by everyone: All indents must be 3 spaces long.
-
+#### fair enough
 ```java
 function main() => {
    print("DreamBerd is the future")!
@@ -223,7 +224,7 @@ function main() => {
 ```
 
 -3 spaces is also allowed.
-
+#### oh o k were back to unhinged
 ```java
    function main() => {
 print("DreamBerd is the future")!
@@ -233,7 +234,7 @@ print("DreamBerd is the future")!
 ## Equality
 
 JavaScript lets you do different levels of comparison. `==` for loose comparison, and `===` for a more precise check. DreamBerd takes this to another level.
-
+#### ig just rounding then
 You can use `==` to do a loose check.
 
 ```java
@@ -264,7 +265,7 @@ If you want to be much less precise, you can use `=`.
 ## Functions
 
 To declare a function, you can use any letters from the word `function` (as long as they're in order):
-
+### funny but also probably not difficult to implement (oh god im gonna have to learn regex)
 ```java
 function add (a, b) => a + b!
 func multiply (a, b) => a * b!
@@ -277,7 +278,7 @@ union inverse (a) => 1/a!
 ## Dividing by Zero
 
 Dividing by zero returns `undefined`.
-
+### piss easy
 ```java
 print(3 / 0)! // undefined
 ```
@@ -285,7 +286,7 @@ print(3 / 0)! // undefined
 ## Strings
 
 Strings can be declared with single quotes or double quotes.
-
+### dont mind this
 ```java
 const const name = 'Lu'!
 const const name = "Luke"!
@@ -313,7 +314,7 @@ const const name = Luke!
 ## String Interpolation
 
 Please remember to use your regional currency when interpolating strings.
-
+#### get user's ip and use it to figure out country (https://myip.wtf/json)
 ```java
 const const name = "world"!
 print("Hello ${name}!")!
@@ -322,20 +323,20 @@ print("Hello ¥{name}!")!
 ```
 
 And make sure to follow your local typographical norms.
-
+#### oh god
 ```java
 print("Hello {name}€!")!
 ```
 
 The symbol for the Cape Verdean escudo is placed in the decimal separator position, as in 2$50.
 Developers from the Republic of Cape Verde can benefit from this syntax:
-
+### i dont even know what this means
 ```java
 addEventListener("keydown", e => print(`You've pressed: {e$code}`))!
 ```
 
 ## Types
-
+#### no type system 🤷
 Type annotations are optional.
 
 ```java
@@ -365,7 +366,7 @@ const var age: Int9 = 28!
 ## Regular Expressions
 
 You can use the regular expression type to narrow string values.
-
+#### 😭
 ```java
 const const email: RegExp<(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])> = "mymail@mail.com"!
 ```
@@ -373,13 +374,13 @@ const const email: RegExp<(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?
 To avoid confusion, you can use any spelling that you want, such as 'Regex', 'RegularExpression' or even
 'RegularExpress' if you like trains.
 
-For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(press(ion)?|p)?/`.
+For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(press(ion)?|p)?/`.  tysm for doing this regex for me
 
 ## Previous
 
 The `previous` keyword lets you see into the past!<br>
 Use it to get the previous value of a variable.
-
+#### still probably only would work in compiled sense 
 ```java
 const var score = 5!
 score++!
@@ -824,6 +825,8 @@ Lisp haters will also love it.
 ```java
 (add (3, (add (5, 6)!
 ```
+
+#### the IL this will generate will put someone into cardiac arrest i stg
 
 ## Examples
 
